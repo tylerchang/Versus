@@ -26,7 +26,7 @@ function Login({history}){
    
       <div className = "loginBox">
         <div style={{ color: "salmon" }}>{errMsg}</div>
-        <div> Login </div>
+        <div> Login. </div>
         <input type="text" value={email} placeholder="Email" onChange={ev => setEmail(ev.target.value)} />
         <input type="password" value={password} placeholder="Password" onChange={ev => setPassword(ev.target.value)}/>
         <button onClick={login}>Login</button>  
