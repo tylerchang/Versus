@@ -1,0 +1,80 @@
+.discussionContainer{
+  display:flex;
+  flex-direction: column;
+
+  .discussionHalf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .halfside{
+      width: 0;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+    
+        h1{
+          font-size: 35px;
+        } 
+        textarea{
+          border: 1px solid #4d94ff;  ;
+          margin: 5px;
+          border-radius: 5px;
+          padding: 1em;
+          font-size: 20px;
+          font-family: 'Gothic A1', sans-serif;
+          outline: 0;
+        }
+    
+        img{
+          width: 200px;
+          height: 200px;
+        }
+    }
+  }
+}
+
+
+
+.disSide2{
+  width: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+    h1{
+      font-size: 35px;
+    } 
+    textarea{
+      border: 1px solid #4d94ff;  ;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 1em;
+      font-size: 20px;
+      font-family: 'Gothic A1', sans-serif;
+      outline: 0;
+    }
+
+    img{
+      width: 200px;
+      height: 200px;
+    }
+}
+
+
+.questionHalf{
+  font-size: 50px;
+  margin: 10px;
+}
+
+.disSide1>button{
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px;
+}
+.disSide2>button{
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px;
+}

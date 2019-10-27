@@ -1,2 +1,0 @@
-# versus
-Created with CodeSandbox

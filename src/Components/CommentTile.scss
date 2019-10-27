@@ -1,0 +1,14 @@
+.commentTile{
+  margin: 2px;
+  font-size: 20px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(145,224,244,1) 51%, rgba(255,255,255,1) 100%);
+  padding: 3px;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+.commentMessage{
+  font-size: 30px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,26 @@
+.createUserBox{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+  
+}
+
+.createUserBox > input{
+  border: none;
+  margin: auto;
+  padding: 1em;
+  font-size: 20px;
+  width: 500px;
+  background-color: #e8eaee;
+
+}
+
+.createUserBox button{
+  background-color: #333640;
+  color: white;
+  padding: 15px;
+  width: 210px;
+  font-size: 20px;
+  font-weight: bold;
+}

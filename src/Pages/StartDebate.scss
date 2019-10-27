@@ -1,0 +1,62 @@
+.submissionBox{
+  background-color: #f62e54;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  padding-top: 2em;
+  margin-top: 140px;
+    >input{
+      margin: 20px;
+      border: none;
+      font-size: 15px;
+      padding: 15px;
+    }
+    >button{
+      margin: auto;
+      background-color: #333640;
+      color: white;
+      padding: 15px;
+      width: 650px;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+    }
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  >img{
+    height: 25px;
+  }
+  
+}
+.box2{
+  display:flex;
+  flex-direction: column;
+  >input{
+    margin: 20px;
+    border: none;
+    width: 210px;
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+.box3{
+  display:flex;
+  flex-direction: column;
+  >input{
+    margin: 20px;
+    border: none;
+    width: 210px;
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+
+
+

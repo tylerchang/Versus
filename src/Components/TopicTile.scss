@@ -1,0 +1,70 @@
+.tileBox{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 550px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  padding-bottom: 100px;
+  box-shadow: 0px 3px 5px 3px  #e0dbdb;
+
+  >.asker{
+    background: #f62e54;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+  }
+}
+
+
+.half1{
+  display:flex;
+  flex-direction: column;
+
+}
+.imageBox{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+    .img1{
+      width: 200px;
+      height: 200px;
+    }
+    .img2{
+      width: 200px;
+      height: 200px;
+    }
+    .logoImage{
+      width: 30px;
+      height: 20px;
+      margin-top: 100px
+    }
+    >div{
+      font-size: 20px;
+      color: #333640;
+      font-weight: bold;
+    }
+}
+
+.half2{
+  display:flex;
+  justify-content: center;
+  margin-top: 50px;
+  a{
+    display: flex;
+    text-decoration: none;
+    button {
+      padding: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      width:460px;
+      background-color: #333640;
+      color: white;
+    }
+  }
+}
+
