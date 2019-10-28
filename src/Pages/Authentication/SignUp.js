@@ -83,7 +83,7 @@ function SignUp(){
 
   return(
     <div>
-      <div className="welcomeBox">
+      <div className="welcomeBox1">
         
         <div className="side1">
           <img src={whiteLogo} alt="error"></img>

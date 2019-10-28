@@ -1,7 +1,7 @@
 import React from 'react';
 import { auth } from '../../utils/firebase';
 import {Link} from "react-router-dom";
-import "./CreateDisplayName.css";
+import "./CreateDisplayName.scss";
 
 function CreateDisplayName(){
 

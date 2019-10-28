@@ -2,10 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 280px;
-  width: 295px;
 
-  input{
+  >input{
     padding: 1em;
     width: 210px;
     font-size: 15px;
@@ -14,19 +12,34 @@
     background-color: #e8eaee;
   }
 
-  div{
+  >div{
     margin-top: 20px;
     font-size: 30px;
     font-weight: 100;
   }
 
-  button{
+  >button{
     background-color: #333640;
     color: white;
-    padding: 15px;
+    padding: 10px;
     width: 210px;
     font-size: 20px;
     font-weight: bold;
+  }
 
+  .signUpAndGuestButtons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    >button{
+      font-size: 20px;
+      border: none;
+    }
+    >a{
+      >button{
+        font-size: 20px;
+        border: none;
+      }
+    }
   }
 }

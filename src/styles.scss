@@ -8,10 +8,13 @@
 
 .App {
   text-align: center;
-  background-color: #eeeeee;
 }
 
 div{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -29,11 +32,16 @@ button:focus{
   outline:0;
 }
 
+a{
+  >button{
+    font-family: 'Noto Sans', sans-serif;
+  }
+}
+
 input{
   font-family: 'Noto Sans', sans-serif;
 ;}
 
 input:focus{
   outline: 0;
-  
 }

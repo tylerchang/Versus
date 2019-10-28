@@ -1,14 +1,17 @@
 .commentTile{
-  margin: 2px;
-  font-size: 20px;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(145,224,244,1) 51%, rgba(255,255,255,1) 100%);
-  padding: 3px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+  width: 480px;
   word-break: break-all;
+  padding: 3px;
+
+  .commentMessage{
+    font-size: 17px;
+  }
+  .commentPoster{
+    font-size: 13px;
+  }
 }
 
-.commentMessage{
-  font-size: 30px;
-  margin-bottom: 5px;
-}

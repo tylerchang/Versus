@@ -2,36 +2,31 @@
 .welcomeBox{
   display: flex;
   width: 590px;
-  height: 350px;
   margin: auto;
   margin-top: 240px;
   justify-content: space-evenly;
   box-shadow: 3px 3px 10px 8px  #e0dbdb;
-}
 
-.side1{
-  display: flex;
-  align-items: center;
-  background: #f62e54;
-  color: white;
-  padding-top: 70px;
-
-  >img{
-    width: 70px;
-    height: 45px;
+  > * {
+    flex-grow: 1;
+    width: 0;
   }
-  div{
-    margin-top: 30px;
-  }
-}
 
-.side2{
-  display: flex;
-  text-align : center;
-  div{
-    button{
-      border:none;
-      font-size: 16px;
+  .side1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f62e54;
+    color: white;
+    padding-top: 70px;
+  
+    >img{
+      width: 70px;
+      height: 45px;
+    }
+    >div{
+      margin-top: 30px;
     }
   }
 }
+

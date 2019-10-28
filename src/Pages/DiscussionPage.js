@@ -10,8 +10,7 @@ function DiscussionPage({ match }) {
   let [input2, setInput2] = React.useState("");
   let [comments1, setComments1] = React.useState([]);
   let [comments2, setComments2] = React.useState([]);
-  let [comments1Likes, setComments1Likes] = React.useState([]);
-  let [comments2Likes, setComments2Likes] = React.useState([]);
+ 
 
   React.useEffect(() => {
     async function loadTopics() {
@@ -90,23 +89,24 @@ function DiscussionPage({ match }) {
   }
 
   return (
-    <div className="discussionContainer">
-      {/*<div className="questionHalf"> {topic.data().question} </div>*/}
-
-      <div className="discussionHalf" style={{
+    <div className="discussionHalf" style={{
         position: 'relative'
       }}>
         <div style={{
           position: 'absolute',
-          border: '1px solid black',
           fontSize: '2em',
           fontWeight: 'bold',
-          top: '10px'
+          top: '110px',
+          width: '1100px',
+          padding: '12px',
+          color: "#333640",
+          background: 'white',
         }}>
-          blah blah
+          {topic.data().question}
         </div>
-        <div className="halfside">
-          <h1>{topic.data().side1}</h1>
+
+        <div className="halfside1" style={{background:'#f62e54'}}>
+          <h1 style={{color:'white'}}>{topic.data().side1}</h1>
           <img src={topic.data().side1ImageURL} alt="image1" />
 
           <div className="side1Comments">
@@ -125,10 +125,10 @@ function DiscussionPage({ match }) {
             onChange={ev => setInput1(ev.target.value)}
             placeholder="Enter your arguement"
           />
-          <button onClick={addSide1Comment}> Post </button>
+          <button onClick={addSide1Comment}> POST </button>
         </div>
 
-        <div className="halfside" style={{background: 'hotpink'}}>
+        <div className="halfside2" style={{background:'#eeeeee'}}>
           <h1>{topic.data().side2}</h1>
           <img src={topic.data().side2ImageURL} alt="image2" />
           <div className="side2Comments">
@@ -146,10 +146,9 @@ function DiscussionPage({ match }) {
             onChange={ev => setInput2(ev.target.value)}
             placeholder="Enter your arguement"
           />
-          <button onClick={addSide2Comment}> Post </button>
+          <button onClick={addSide2Comment}> POST </button>
         </div>
       </div>
-    </div>
   );
 }
 
