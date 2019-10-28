@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { auth } from "../../utils/firebase";
 import logoWhite from "../../Images/logoWhite.png";
 import logout from '../../Images/logout.png';
-import profile from "../../Images/profile.png";
+import profileIcon from '../../Images/profile.png';
 
 
 function NavBar() {
@@ -26,7 +26,7 @@ function NavBar() {
 
       <div className="restOfButtons">
         <Link to="/StartDebate"> <button className="startDebateButton">Post +</button> </Link> 
-        <Link to="/Profile"> <button className="profileButton"><img src={profile} alt="Profile" /></button> </Link> 
+        <Link to="/Profile"> <button className="profileButton"><img src={profileIcon} alt="Profile" /></button> </Link> 
         <Link to="/"> <button onClick={logOut} className="logoutButton"> <img src={logout} alt="Sign Out" /> </button> </Link> 
       </div>
         
