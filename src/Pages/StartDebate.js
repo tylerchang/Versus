@@ -2,7 +2,7 @@ import React from 'react';
 import './StartDebate.scss';
 import { db, auth } from '../utils/firebase';
 import CreateDisplayName from './Authentication/CreateDisplayName';
-import logoWhite from "../Images/logoWhite.png";
+import logoHalf from "../Images/logoHalf.png";
 
 function StartDebate(){
 
@@ -41,7 +41,9 @@ function StartDebate(){
   }
   
   return(
-    <div>
+    <div className="startDebateContainer">
+      <div className="redSide"></div>
+      <div className="whiteSide"></div>
       <div className="submissionBox">
         
         <input type="text" value={question} onChange={ev => setQuestion(ev.target.value)} placeholder="Enter your question e.g. Pen vs. Pencil" />
@@ -51,7 +53,7 @@ function StartDebate(){
             <input type="text" value={image1} onChange={ev => setImage1(ev.target.value)} placeholder="1st Answer Image URL"/>
           </div>
 
-         <img src={logoWhite} alt="Image"/>
+         <img src={logoHalf} alt="Image"/>
           
           <div className="box3">
             <input type="text" value={answer2} onChange={ev => setAnswer2(ev.target.value)} placeholder="2nd Answer Choice e.g. Pencil"/>
@@ -62,6 +64,8 @@ function StartDebate(){
         
         <button onClick={addPost}> Post </button>
       </div>
+      
+    
     </div>
    
   

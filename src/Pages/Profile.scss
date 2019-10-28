@@ -14,8 +14,16 @@
 }
 
 .profileHalf1 button{
-  padding: 5px;
+  padding: 10px;
   font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #333640;
+}
+
+.profileHalf1 button:hover{
+  background-color: #eeeeee;
+  color: #333640;
 }
 
 .profileHalf2{

@@ -1,0 +1,59 @@
+.navBox{
+  display:flex;
+  border: none;
+  background: #f62e54;
+  height: 100px;
+
+  .emptySpace{
+    flex-grow: 1;
+  }
+
+  .mainLogo{
+    >a{
+      >button{
+        border: 0;
+        background-color: transparent;
+        >img{
+          margin-top: 20px;
+          margin-left: 30px;
+          width: 70px;
+          height: 40px;
+          border:0;
+        }
+        >img:hover{
+          border:0;
+          box-shadow: 0px 0px 5px #fff;
+        }
+      }
+    }
+  }
+
+  .restOfButtons{
+    display: flex;
+    a{
+      .startDebateButton{
+        font-size: 18px;
+        color: white;
+        width: 120px;
+        height: 90px;
+        border: none;
+        background-color: #f62e54;
+      }
+      .startDebateButton:hover{
+        background-color: #eeeeee;
+        color: #f62e54;
+      }
+      >button{
+        border:none;
+
+        >img{
+          background: transparent;
+          height: 45px;
+          width: 40px;
+          
+        }
+      }
+    }
+  }
+}
+

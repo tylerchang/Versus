@@ -1,0 +1,29 @@
+.editProfileBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+
+.editProfileBox > input{
+  border: none;
+  padding: 1em;
+  font-size: 20px;
+  background-color: #eeeeee;
+  width: 500px;
+  margin: auto;
+}
+
+.editProfileBox button{
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #333640;
+  color: white;
+}
+
+.editProfileBox button:hover{
+  background-color: #eeeeee;
+  color: #333640;
+}

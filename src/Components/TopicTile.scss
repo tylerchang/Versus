@@ -62,8 +62,14 @@
       font-size: 22px;
       font-weight: bold;
       width:460px;
+      border: none;
       background-color: #333640;
       color: white;
+    }
+
+    button:hover{
+      background-color: #eeeeee;
+      color: #333640;
     }
   }
 }

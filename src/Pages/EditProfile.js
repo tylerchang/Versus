@@ -1,5 +1,5 @@
 import React from 'react';
-import './EditProfile.css';
+import './EditProfile.scss';
 import { auth } from "../utils/firebase";
 import {Link} from "react-router-dom";
 

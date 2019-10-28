@@ -27,7 +27,7 @@ function TopicTile(props){
       
       <div className = "half2">
          
-        <Link to={"/DiscussionPage/" + props.id} > <button className="joinButton"> Join </button> </Link>
+        <Link to={"/DiscussionPage/" + props.id} > <button className="joinButton"> JOIN </button> </Link>
 
       </div>
     </div>

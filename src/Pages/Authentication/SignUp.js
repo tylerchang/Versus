@@ -31,6 +31,8 @@ function SignUpComponent({ history }) {
 
   return (
     <div>
+       
+      
       <div className="signUpBox">
         <div style={{ color: "salmon" }}>{errMsg}</div>
 
@@ -83,6 +85,11 @@ function SignUp(){
 
   return(
     <div>
+      <div className="welcomeBar">
+        <div className="mainLogo">
+        <Link to="/"> <button> <img src={whiteLogo} alt="Home"/> </button> </Link> 
+        </div>
+      </div>
       <div className="welcomeBox1">
         
         <div className="side1">

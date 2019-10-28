@@ -3,6 +3,8 @@ import { withRouter } from "react-router";
 import "./DiscussionPage.scss";
 import { db, auth } from "../utils/firebase";
 import CommentTile from "../Components/CommentTile";
+import logoHalf from "../Images/logoHalf.png";
+
 
 function DiscussionPage({ match }) {
   let [topic, setTopic] = React.useState(undefined);
@@ -127,6 +129,11 @@ function DiscussionPage({ match }) {
           />
           <button onClick={addSide1Comment}> POST </button>
         </div>
+        
+        <img style={{
+          position: 'absolute',
+          top: "300px"
+        }} src={logoHalf} alt="logo"/>
 
         <div className="halfside2" style={{background:'#eeeeee'}}>
           <h1>{topic.data().side2}</h1>

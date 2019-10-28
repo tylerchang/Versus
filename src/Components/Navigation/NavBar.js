@@ -1,11 +1,11 @@
 import React from "react";
-import "./NavBar.css"
+import "./NavBar.scss";
 import { Link } from "react-router-dom";
 import { auth } from "../../utils/firebase";
-import profileIcon from "../../Images/profileIcon.png"
-import logout from "../../Images/logout.png"
-import plus from "../../Images/plus.png"
-import home from "../../Images/home.png"
+import logoWhite from "../../Images/logoWhite.png";
+import logout from '../../Images/logout.png';
+import profile from "../../Images/profile.png";
+
 
 function NavBar() {
 
@@ -16,10 +16,20 @@ function NavBar() {
 
   return(
     <div className="navBox">
-        <Link to="/"> <button> <img src={home} alt="Start Debate" /> </button> </Link> 
-        <Link to="/StartDebate"> <button><img src={plus} alt="Start Debate" /></button> </Link> 
-        <Link to="/Profile"> <button className="profileButton"><img src={profileIcon} alt="Profile" /></button> </Link> 
-        <Link to="/"> <button onClick={logOut}> <img src={logout} alt="Sign Out" /> </button> </Link> 
+      <div className="mainLogo">
+      <Link to="/"> <button> <img src={logoWhite} alt="Home"/> </button> </Link> 
+      </div>
+
+      <div className="emptySpace">
+
+      </div>
+
+      <div className="restOfButtons">
+        <Link to="/StartDebate"> <button className="startDebateButton">Post +</button> </Link> 
+        <Link to="/Profile"> <button className="profileButton"><img src={profile} alt="Profile" /></button> </Link> 
+        <Link to="/"> <button onClick={logOut} className="logoutButton"> <img src={logout} alt="Sign Out" /> </button> </Link> 
+      </div>
+        
     </div>
   );
 }

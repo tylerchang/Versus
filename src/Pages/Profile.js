@@ -10,8 +10,6 @@ function Profile(){
 
   let[topics, setTopics] = React.useState([]);
   let [loading, setLoading] = React.useState(true);
-
-  //const userdata = JSON.parse(window.localStorage.getItem("userdata"));
  
 
   async function loadTopics() {
@@ -45,7 +43,7 @@ function Profile(){
       <div className="profileBox">
 
         <div className="profileHalf1"> 
-          <div>{auth.currentUser.displayName} <Link to="/EditProfile"> <button> Edit </button> </Link> </div>
+          <div>{auth.currentUser.displayName} <Link to="/EditProfile"> <button> EDIT </button> </Link> </div>
           <div>Email: {auth.currentUser.email} </div>
         </div>
 

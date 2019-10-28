@@ -25,6 +25,11 @@
     width: 210px;
     font-size: 20px;
     font-weight: bold;
+    border:none;
+  }
+  >button:hover{
+    background-color: #eeeeee;
+    color:  #333640;
   }
 
   .signUpAndGuestButtons{
@@ -33,12 +38,21 @@
     margin-bottom: 30px;
     >button{
       font-size: 20px;
+      padding: 10px;
       border: none;
+    }
+    >button:hover{
+      background-color:#eeeeee;
     }
     >a{
       >button{
         font-size: 20px;
+        padding:10px;
         border: none;
+      }
+      >button:hover{
+        background-color:#eeeeee;
+
       }
     }
   }
